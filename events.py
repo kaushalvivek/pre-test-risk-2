@@ -98,7 +98,7 @@ def fire ():
     # Fire on '0'
     if (State.recession_flag == 1 and User.current_sector[-1] == State.recession_sector)\
      or feedback_array[State.state] == 0:
-        State.job_quality -= 1.5      
+        State.job_quality -= 1     
         State.fired_flag = 1
         os.system("tput reset")
         input ("fired")    
